@@ -7,7 +7,7 @@ class  p1 extends Frame{
     }
     public static void main(String[] args) {
         p1 obj = new p1("SDV");
-        obj.setSize(400,400);
+        obj.setSize(700,400);
         obj.setVisible(true);
         obj.addWindowListener(new WindowAdapter(){
             @Override
@@ -17,3 +17,4 @@ class  p1 extends Frame{
         });
     }
 }
+//sdv
