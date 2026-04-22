@@ -17,4 +17,3 @@ class  p1 extends Frame{
         });
     }
 }
-//sdv
