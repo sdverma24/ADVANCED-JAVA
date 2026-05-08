@@ -10,13 +10,17 @@ class p1 extends Frame
     public static void main(String[] args) 
     {
         p1 obj = new p1("SDV");
-        obj.setSize(300,400);
         obj.setVisible(true);
+        obj.setSize(400,400);
         obj.addWindowListener(new WindowAdapter(){
             @Override
             public void windowClosing(WindowEvent e){
                 obj.dispose();
             }
-        });
+        });    
+        obj.setLayout(null);
+        Button b = new Button("Click!");
+        b.setBounds(300,222,30,40);
+        obj.add(b);
     }
 }
