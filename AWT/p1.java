@@ -19,8 +19,14 @@ class p1 extends Frame
             }
         });    
         obj.setLayout(null);
-        Button b = new Button("Click!");
-        b.setBounds(300,222,30,40);
+        Label l = new Label("Enter your name : ");
+        l.setBounds(30,50,150,50);
+        obj.add(l);
+        TextField t = new TextField();
+        t.setBounds(200,50,150,50);
+        obj.add(t);
+        Button b = new Button("Submit");
+        b.setBounds(20,130,40,40);
         obj.add(b);
     }
 }
