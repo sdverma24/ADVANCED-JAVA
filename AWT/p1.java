@@ -17,6 +17,7 @@ class p1 extends Frame
             public void windowClosing(WindowEvent e){
                 obj.dispose();
             }
+            
         });    
         obj.setLayout(null);
         Label l = new Label("Enter your name : ");
