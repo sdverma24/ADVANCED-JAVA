@@ -7,27 +7,26 @@ class p1 extends Frame
     {
         super(s);
     }
-    public static void main(String[] args) 
+    public void windowClosing(WindowEvent e)
+    {
+       Frame frame = (Frame)e.getSource();
+       frame.dispose();
+    }
+    public static void main(String args[])
     {
         p1 obj = new p1("SDV");
+        obj.setSize(300,300);
         obj.setVisible(true);
-        obj.setSize(400,400);
+        obj.setLayout(null);
         obj.addWindowListener(new WindowAdapter(){
             @Override
             public void windowClosing(WindowEvent e){
-                obj.dispose();
+                System.exit(0);
             }
-            
-        });    
-        obj.setLayout(null);
-        Label l = new Label("Enter your name : ");
-        l.setBounds(30,50,150,50);
-        obj.add(l);
-        TextField t = new TextField();
-        t.setBounds(200,50,150,50);
-        obj.add(t);
-        Button b = new Button("Submit");
-        b.setBounds(20,130,40,40);
+        });
+
+        Button b = new Button("oK");
+        b.setBounds(20,20,100,100);
         obj.add(b);
     }
 }
